@@ -7,18 +7,19 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CrystalBallViewController: UIViewController {
     
+    let predictions = ["It is Certain", "It is Decidedly So", "The Stars Are Not Aligned", "My Reply is No", "It is Doubtful", "Better not Tell You Now", "Concentrate and Ask Again", "Unable to Answer Now"]
+    
+    var player = AVAudioPlayer()
     
     @IBOutlet weak var backgroundImageView: UIImageView!
     
     @IBOutlet weak var animationImageView: UIImageView!
     
     @IBOutlet weak var predictionLabel: UILabel!
-    
-
-    let predictions = ["It is Certain", "It is Decidedly So", "The Stars Are Not Aligned", "My Reply is No", "It is Doubtful", "Better not Tell You Now", "Concentrate and Ask Again", "Unable to Answer Now"]
     
     
     override func viewDidLoad() {
@@ -32,6 +33,7 @@ class CrystalBallViewController: UIViewController {
     override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
         doAnimation()
         predictionLabel.text = makePredicition()
+        playSoundEffect()
     }
     
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
@@ -43,6 +45,16 @@ class CrystalBallViewController: UIViewController {
     func makePredicition() -> String {
         let random = arc4random_uniform(UInt32(predictions.count))
         return predictions[Int(random)]
+    }
+    
+    func playSoundEffect() {
+        let audioPath = Bundle.main.path(forResource: "crystal_ball", ofType: "mp3")
+        do {
+            try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
+            player.play()
+        } catch {
+            print("there was an error playing audio")
+        }
     }
     
     func doAnimation() {
