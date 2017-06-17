@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="VRo-7x-9FI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Crystal Ball View Controller-->
+        <scene sceneID="SQi-ab-PHb">
+            <objects>
+                <viewController id="VRo-7x-9FI" customClass="CrystalBallViewController" customModule="CrystalBallSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="urv-3W-t48"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ys-xi-0r4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vFr-OB-Vnl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0x2-Cu-y4n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BlB-lW-I3k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tt-6W-Cbu">
+                                <rect key="frame" x="71" y="242" width="238" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BlB-lW-I3k" firstAttribute="leading" secondItem="vFr-OB-Vnl" secondAttribute="leading" id="8nn-za-CCw"/>
+                            <constraint firstItem="BlB-lW-I3k" firstAttribute="top" secondItem="vFr-OB-Vnl" secondAttribute="top" id="SeJ-Rn-qdC"/>
+                            <constraint firstItem="9ys-xi-0r4" firstAttribute="top" secondItem="0x2-Cu-y4n" secondAttribute="bottom" id="UPe-pd-Nak"/>
+                            <constraint firstAttribute="trailing" secondItem="0x2-Cu-y4n" secondAttribute="trailing" id="YEk-Fx-JpU"/>
+                            <constraint firstAttribute="trailing" secondItem="BlB-lW-I3k" secondAttribute="trailing" id="ceZ-J4-D3Y"/>
+                            <constraint firstItem="9ys-xi-0r4" firstAttribute="top" secondItem="BlB-lW-I3k" secondAttribute="bottom" id="fEY-jV-E4r"/>
+                            <constraint firstItem="0x2-Cu-y4n" firstAttribute="leading" secondItem="vFr-OB-Vnl" secondAttribute="leading" id="kvS-hY-QXl"/>
+                            <constraint firstItem="0x2-Cu-y4n" firstAttribute="top" secondItem="vFr-OB-Vnl" secondAttribute="top" id="unc-Gg-fsV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationImageView" destination="0x2-Cu-y4n" id="2Xg-C6-bNt"/>
+                        <outlet property="backgroundImageView" destination="BlB-lW-I3k" id="B1Y-0R-Ko6"/>
+                        <outlet property="predictionLabel" destination="9tt-6W-Cbu" id="M5V-Tl-nUK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MvC-Sm-y6C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.3999999999999999" y="257.72113943028489"/>
+        </scene>
+    </scenes>
+</document>
