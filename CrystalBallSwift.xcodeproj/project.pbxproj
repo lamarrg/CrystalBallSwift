@@ -393,17 +393,20 @@
 					2ABECFE61EF5663E00A23A9A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2H5QQ8S295;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					2ABECFFA1EF5663E00A23A9A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2H5QQ8S295;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2ABECFE61EF5663E00A23A9A;
 					};
 					2ABED0051EF5663E00A23A9A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 2H5QQ8S295;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2ABECFE61EF5663E00A23A9A;
 					};
@@ -682,7 +685,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesitantpaw.CrystalBallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -695,7 +699,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesitantpaw.CrystalBallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -709,7 +714,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesitantpaw.CrystalBallSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrystalBallSwift.app/CrystalBallSwift";
 			};
 			name = Debug;
@@ -724,7 +730,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesitantpaw.CrystalBallSwiftTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrystalBallSwift.app/CrystalBallSwift";
 			};
 			name = Release;
@@ -738,7 +745,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesitantpaw.CrystalBallSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = CrystalBallSwift;
 			};
 			name = Debug;
@@ -752,7 +760,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hesitantpaw.CrystalBallSwiftUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = CrystalBallSwift;
 			};
 			name = Release;
@@ -776,6 +785,7 @@
 				2ABED0111EF5663E00A23A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ABED0121EF5663E00A23A9A /* Build configuration list for PBXNativeTarget "CrystalBallSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -784,6 +794,7 @@
 				2ABED0141EF5663E00A23A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ABED0151EF5663E00A23A9A /* Build configuration list for PBXNativeTarget "CrystalBallSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -792,6 +803,7 @@
 				2ABED0171EF5663E00A23A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
