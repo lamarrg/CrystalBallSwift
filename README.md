@@ -1,6 +1,6 @@
 # CrystalBallSwift
 
-The Crystal Ball app has beeb rebuilt in Swift.
+The Crystal Ball app has been rebuilt in Swift.
 
 I used the UIView animation method to handle the animation. Based on the original tutorial, it was based on the background UIView. A problem with this is that after the animation was complete, it left the view blank. I could have used a timer with an array, but I wanted to try something different. 
 
